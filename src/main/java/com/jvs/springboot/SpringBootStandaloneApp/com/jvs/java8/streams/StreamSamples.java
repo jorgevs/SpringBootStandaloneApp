@@ -110,7 +110,7 @@ public class StreamSamples {
                 .filter(s -> s.startsWith("c"))
                 .map(String::toUpperCase)
                 .sorted()
-                .forEach(System.out::println);  //C1, C2
+                .forEach(s -> System.out.println("Starts with c: " + s));  //C1, C2
 
         //=================================================================================
         System.out.println("Substring, convert to Integer, get the maximum value:");
@@ -120,11 +120,15 @@ public class StreamSamples {
                 .max()
                 .ifPresent(System.out::println);  // 3
 
+        System.out.println("Maps doubles to ints:");
+        Stream.of(1.5, 2.3, 3.7)
+                .mapToInt(Double::intValue)
+                .forEach(System.out::println);  // 1 2 3
         //=================================================================================
         System.out.println("Convert int to Object:");
         IntStream.range(1, 4)
                 .mapToObj(i -> "a" + i)
-                .forEach(System.out::println);
+                .forEach(System.out::println);  // a1 a2 a3
 
         //=================================================================================
         System.out.println("Print the execution and calling order:");
