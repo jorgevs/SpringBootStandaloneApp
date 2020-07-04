@@ -4,7 +4,7 @@ import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.function.*;
 
-public class FunctionalInterfaceExample1 {
+public class FunctionalInterfaceSamples {
 
     public static void main(String[] args) {
 
