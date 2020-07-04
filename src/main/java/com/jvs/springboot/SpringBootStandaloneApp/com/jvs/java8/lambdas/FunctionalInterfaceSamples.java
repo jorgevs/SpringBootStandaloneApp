@@ -8,6 +8,10 @@ public class FunctionalInterfaceSamples {
 
     public static void main(String[] args) {
 
+        // ============================= Functional Interfaces ============================
+        // An interface with single abstract method is called Functional Interface.
+        // An example is java.lang.Runnable). Lambda expressions implement the only abstract
+        // function and therefore implement functional interfaces.
         //=================================================================================
         // Anonymous inner class:  Runnable
         Runnable r1 = new Runnable() {

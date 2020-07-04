@@ -3,9 +3,11 @@ package com.jvs.springboot.SpringBootStandaloneApp.com.jvs.java8.lambdas;
 public class LambdaSamples {
 
     public static void main(String[] args) {
+        // =================================== Lambdas ====================================
+        // Lambda expressions implement an only abstract function and therefore implement
+        // functional interfaces.
         //=================================================================================
-        // === Lambda expressions basically express instances of functional interfaces ====
-        //=================================================================================
+        
         MyFuncInterface myFuncInterface = () -> System.out.println("xxxx");
         myFuncInterface.run();
 
